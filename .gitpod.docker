@@ -3,7 +3,7 @@ USER root
 # Install few essential stuffs for gitpod
 RUN apt-get update -y \
  && apt-get upgrade -y \
- && apt-get install --no-install-recommends -y ca-certificates cpio git wget make bc zip curl gcc libc6-dev python3-minimal libssl-dev flex bison nano sudo python
+ && apt-get install --no-install-recommends -y ca-certificates cpio git wget make bc zip curl gcc libc6-dev 2to3 python2-minimal python2 dh-python python-is-python3 libssl-dev flex bison nano sudo python
 # Cleanup a bit the env
 RUN apt-get autoremove -y \
  && apt-get clean autoclean \
